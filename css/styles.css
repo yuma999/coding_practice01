@@ -1,0 +1,299 @@
+body {
+  font: Noto Sans CJK JP;
+  font-size: 14px;
+  width: 1440px;
+  margin: 0 auto;
+  height: auto;
+}
+
+header {
+  background: url(../img/fv-bgi2x.jpg);
+  background-size: cover;
+  color: #fff;
+}
+.header {
+  padding: 0 120px;
+}
+.header_content {
+  display: flex;
+  padding: 25px 0;
+  margin: 0;
+}
+.header_content h1 {
+  font-size: 26px;
+  margin: 0;
+}
+.header_link {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.hamberger {
+  display: none;
+}
+.header_link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0;
+  padding-right: 60px;
+}
+.header_link a:last-child {
+  padding-right: 0;
+}
+.header_link a:hover {
+  color: rgb(214, 208, 208);
+}
+.header_title_border {
+  border-top: 2px solid #fff;
+}
+.header_title {
+  padding: 300px 0;
+}
+.header_title h1 {
+  border: 2px solid #fff;
+  font-size: 50px;
+  width: 30%;
+  padding: 20px 40px;
+  margin: 0 auto;
+}
+
+
+main {
+  margin: 0 200px;
+}
+
+/* about */
+.about {
+  margin-top: 100px;
+}
+.about h1 {
+  text-align: center;
+  font-size: 36px;
+}
+.about_text {
+  margin-top: 60px;
+}
+.about_text h1 {
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+.about_text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+
+/* service */
+.service {
+  margin-top: 100px;
+}
+.service>h1 {
+  text-align: center;
+  font-size: 36px;
+}
+.service01,
+.service02 {
+  display: flex;
+  margin-top: 50px;
+}
+.service01 {
+  flex-flow: row-reverse;
+}
+.service_content h1 {
+  font-size: 24px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+.service_content p {
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 1.8;
+}
+
+.service01_img {
+  padding-right: 100px;
+}
+.service02_img {
+  padding-left: 90px;
+}
+
+
+/* news */
+.news {
+  margin-top: 90px;
+}
+.news h1 {
+  text-align: center;
+  font-size: 36px;
+}
+.news_content {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.news_content p {
+  font-size: 13px;
+  width: 80%;
+  margin: 20px 30px;
+}
+.news01,
+.news02,
+.news03 {
+  border: 1px solid rgb(211, 206, 206);
+  width: 320px;
+}
+
+/* contact */
+
+.contact {
+  margin-top: 100px;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 24px;
+}
+.form p {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 20px;
+}
+.form_name,
+.form_tel,
+.form_email {
+  width: 100%;
+}
+.form textarea {
+  width: 100%;
+  height: 171px;
+}
+.form_btn{
+  width: 30%;
+  height: 59px;
+  background: #1B1310;
+  color: #fff;
+  border-radius: 10%/40%;
+  margin: 50px 0;
+}
+.btn {
+  text-align: center;
+}
+.btn input:hover {
+  color: rgb(223, 217, 217);
+}
+
+
+
+.footer {
+  background: #1B1310;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.footer p {
+  padding: 30px 0;
+  margin: 0;
+}
+
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  background: #fff;
+  color: #737373;
+  padding: 30px;
+  border: solid 1px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
+  text-decoration: none;
+}
+
+@media (max-width:480px) {
+  
+
+  body {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+  }
+  main {
+    margin: 0 15px;
+  }
+  .header {
+    padding: 0;
+    margin: 0 15px;
+  }
+  .header_title {
+    margin: 0;
+  }
+  .header_link {
+    display: none;
+  }
+  .hamberger {
+    display: block;
+    margin: 5px 0 0 auto;
+  }
+  .header_content {
+    padding: 20px 0;
+  }
+  .header_title {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .header_title h1 {
+    width: 100%;
+    font-size: 30px;
+    padding: 30px 0;
+  }
+
+
+
+
+
+
+  .service01,
+  .service02 {
+    display: block;
+  }
+  .service01_img {
+    padding-right: 0;
+  }
+  .service02_img {
+    padding-left: 0;
+  }
+  .service_content p {
+    margin-bottom: 40px;
+  }
+
+  
+  .news_content {
+    display: block;
+  }
+  .news01,
+  .news02,
+  .news03 {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  .form_btn {
+    width: 70%;
+    font-size: 20px;
+    border-radius: 20%/65%;
+    box-shadow: 0 0 5px #000;
+  }
+
+  #page-top {
+    padding: 3px;
+  }
+}

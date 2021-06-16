@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coding_practice01</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div id="header" class="header">
+      <div class="header_content">
+        <h1>Cresta Design.</h1>
+        <div class="hamberger">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div class="header_link">
+          <a href="#about">About</a>
+          <a href="#service">Service</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="header_title_border">
+        <div class="header_title">
+          <h1>Cresta Design.</h1>
+        </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section>
+      <div id="about" class="about">
+        <h1>About</h1>
+        <div class="about_text">
+          <h1>ミニマルで<br>洗練されたデザインを。</h1>
+          <p>
+            近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="service" class="service">
+        <h1>Service</h1>
+        <div class="service_content">
+          <div class="service01">
+            <div class="service01_nav">
+              <h1>
+                リリース時のサポートで<br>
+                サービスのブランディングを
+              </h1>
+              <p>
+              弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。
+              </p>
+            </div>
+            <div class="service01_img">
+              <img src="img/service-image2x.jpg" alt="">
+            </div>
+          </div>
+          <div class="service02">
+            <div class="service02_nav">
+              <h1>
+                リリース後のサポートで<br>
+                効果を最大化させる
+              </h1>
+              <p>
+                弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。
+              </p>
+            </div>
+            <div class="service02_img">
+              <img src="img/service-image022x.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="news" class="news">
+        <h1>News</h1>
+        <div class="news_content">
+          <div class="news01">
+            <img src="img/card-image12x.jpg" alt="">
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+          <div class="news02">
+            <img src="img/card-image22x.jpg" alt="">
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+          <div class="news03">
+            <img src="img/card-image32x.jpg" alt="">
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="contact" class="contact">
+        <h1>お問い合わせ</h1>
+        <div class="form">
+          <p class="form_item">担当者名</p>
+          <input class="form_name" type="text">
+          <p class="form_item">電話番号</p>
+          <input class="form_tel" type="text">
+          <p class="form_item">メールアドレス</p>
+          <input class="
+          form_email" type="email">
+          <p class="form_item">お問い合わせ内容</p>
+          <textarea class="form_text"></textarea>
+          <div class="btn">
+            <input class="form_btn" type="submit" value="送信">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>©︎crest.design all rights reserved</p>
+    </div>
+    <a href="#" id="page-top"><i class="blogicon-chevron-up">Top</i></a>
+  </footer>
+  <script>
+    $(function(){
+      $('a[href^="#"]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+    </script>
+</body>
+</html>
